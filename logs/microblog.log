@@ -1,0 +1,56 @@
+2019-11-27 18:13:11,445 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:13:22,722 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:16:15,083 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:16:26,540 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:32:25,961 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:33:20,613 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:37:16,588 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:48:34,927 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:48:40,250 ERROR: Exception on /index [GET] [in /home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/opt/develop/projects/python/practice/microblog/application/routes.py", line 22, in index
+    return render_template('index.html', title='Home', posts=posts)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/develop/projects/python/practice/microblog/application/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/opt/develop/projects/python/practice/microblog/application/templates/base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "/opt/develop/projects/python/practice/microblog/application/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/home/khawar/.local/share/virtualenvs/microblog-7DYM0AUn/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2019-11-27 18:51:15,517 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:57:44,435 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-27 18:59:58,529 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-28 10:15:32,519 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-28 11:11:59,396 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-28 12:53:10,993 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-28 12:54:32,559 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-28 12:55:19,603 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
+2019-11-28 13:26:50,063 INFO: Microblog company [in /opt/develop/projects/python/practice/microblog/application/__init__.py:46]
