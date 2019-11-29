@@ -22,8 +22,8 @@ def send_password_reset_email(user):
 #     mail.send(msg)
 
 
-def send_async_email(app, msg):
-    with app.app_context():
+def send_async_email(the_app, msg):
+    with the_app.app_context():
         mail.send(msg)
 
 
