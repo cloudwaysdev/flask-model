@@ -18,3 +18,5 @@ class Config(object):
     MAIL_SUBJECT_FAILURE = 'Alert! Something wrong in Flask App'
 
     POSTS_PER_PAGE = 3
+
+    LANGUAGES = ['en', 'es']
