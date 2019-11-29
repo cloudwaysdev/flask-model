@@ -17,4 +17,4 @@ class Config(object):
     ADMINS = ['khawar.gt@gmail.com']
     MAIL_SUBJECT_FAILURE = 'Alert! Something wrong in Flask App'
 
-    POSTS_PER_PAGE = 25
+    POSTS_PER_PAGE = 3

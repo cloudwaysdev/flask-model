@@ -16,6 +16,7 @@ pymysql = "*"
 flask-login = "*"
 flask-mail = "*"
 pyjwt = "*"
+flask-bootstrap = "*"
 
 [requires]
 python_version = "3.6"
