@@ -40,8 +40,6 @@ def create_app(config_class=Config):
     from application.main import bp as main_bp
     app.register_blueprint(main_bp)
 
-    from application import models
-
     if not app.debug and not app.testing:
         if not os.path.exists('logs'):
             os.mkdir('logs')
@@ -55,13 +53,4 @@ def create_app(config_class=Config):
 
     return app
 
-#
-# 5000 mot
-# 5000 wed
-# 10000 fat
-# 15000 ren
-# -----------
-# 35000
-
-
-# 23700
+from application import models

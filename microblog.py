@@ -1,6 +1,8 @@
-from application import app, db
+from application import create_app, db
 from application.models import User, Post
 from werkzeug.security import generate_password_hash, check_password_hash
+
+app = create_app()
 
 
 @app.shell_context_processor
