@@ -14,7 +14,7 @@ class Config(object):
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['khawar.gt@gmail.com']
+    ADMINS = ['mailserver989@gmail.com']
     MAIL_SUBJECT_FAILURE = 'Alert! Something wrong in Flask App'
 
     POSTS_PER_PAGE = 3

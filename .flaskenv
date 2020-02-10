@@ -2,9 +2,6 @@ FLASK_APP=microblog.py
 
 DATABASE_URI='mysql+pymysql://root:testpassroot1@172.6.0.11/microblog'
 
-LDFLAGS="-L/usr/local/opt/openssl/lib $LDFLAGS"
-CPPFLAGS="-I/usr/local/opt/openssl/include $CPPFLAGS"
-
 FLASK_DEBUG=1
 
 

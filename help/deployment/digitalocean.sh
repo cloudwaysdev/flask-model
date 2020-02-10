@@ -30,4 +30,17 @@ python3 -c "import uuid; print(uuid.uuid4().hex)"    # create secret key
 
 echo "export FLASK_APP=microblog.py" >> ~/.profile
 
-mysql -u root -p
+mysql -u rbdwvhshzm -p
+
+
+sudo supervisorctl reload
+
+
+sudo service nginx reload
+
+
+(venv) $ git pull                              # download the new version
+(venv) $ sudo supervisorctl stop microblog     # stop the current server
+(venv) $ flask db upgrade                      # upgrade the database
+(venv) $ flask translate compile               # upgrade the translations
+(venv) $ sudo supervisorctl start microblog    # start a new server
