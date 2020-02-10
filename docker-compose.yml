@@ -1,0 +1,20 @@
+version: "3"
+services:
+    microblog:
+        image: microblog:latest
+        container_name: microblog
+        ports:
+            - 5001:5000
+        external_links:
+            - kmysql
+            - kes
+        environment:
+            DATABASE_URI: 'mysql+pymysql://root:testpassroot1@kmysql/flask_model'
+            ELASTICSEARCH_URL: 'http://kes:9200'
+        networks:
+            xenial_nw:
+                ipv4_address: 172.6.0.31
+networks:
+  xenial_nw:
+    external:
+      name: docker_nw

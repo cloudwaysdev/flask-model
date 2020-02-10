@@ -1,6 +1,6 @@
 FLASK_APP=microblog.py
 
-DATABASE_URI='mysql+pymysql://root:testpassroot1@172.6.0.11/microblog'
+DATABASE_URI='mysql+pymysql://root:testpassroot1@172.6.0.11/flask_model'
 
 FLASK_DEBUG=1
 

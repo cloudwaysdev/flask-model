@@ -4,19 +4,15 @@ RUN adduser -D microblog
 
 WORKDIR /home/microblog
 
-COPY . /home/microblog/
-
-# COPY requirements.txt requirements.txt
-
-
+COPY requirements.txt requirements.txt
 RUN python -m venv venv
 RUN venv/bin/pip install -r requirements.txt
-RUN venv/bin/pip install gunicorn
+RUN venv/bin/pip install gunicorn pymysql
 
-COPY application app
+COPY application application
 COPY migrations migrations
-COPY microblog.py config.py boot.sh ./
-RUN chmod +x boot.sh
+COPY microblog.py config.py boot.sh .flaskenv ./
+RUN chmod a+x boot.sh
 
 ENV FLASK_APP microblog.py
 
@@ -24,30 +20,7 @@ RUN chown -R microblog:microblog ./
 USER microblog
 
 EXPOSE 5000
-ENTRYPOINT ["./boot.sh"]
 
-# FROM python:3.6-alpine
-#
-# RUN adduser -D flaskapp
-#
-# WORKDIR /home/flaskapp
-#
-# COPY application application
-#
-# COPY requirements.txt requirements.txt
-# RUN python -m venv venv
-# RUN venv/bin/pip install -r requirements.txt
-# RUN venv/bin/pip install gunicorn
-#
-# # COPY app app
-# COPY migrations migrations
-# COPY microblog.py config.py boot.sh ./
-# RUN chmod +x boot.sh
-#
-# ENV FLASK_APP microblog.py
-#
-# RUN chown -R microblog:microblog ./
-# USER microblog
-#
-# EXPOSE 5000
-# ENTRYPOINT ["./boot.sh"]
+# RUN /bin/bash -c "source /home/microblog/.flaskenv"
+
+ENTRYPOINT ["./boot.sh"]

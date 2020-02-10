@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 pip install gunicorn pymysql
 
-vim  .env
+vim  .flaskenv
 SECRET_KEY=52cb883e323b48d78a0a36e8e951ba4a
 MAIL_SERVER=localhost
 MAIL_PORT=25
