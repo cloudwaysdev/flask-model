@@ -1,3 +1,6 @@
+- Install pipenv
+`pip install --user pipenv`
+
 - Install from Pipfile, if there is one:
 
 `pipenv install`
